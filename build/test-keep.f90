@@ -376,7 +376,7 @@ do i=1,n+1
 end do
 !****************************************************************************************
 !Prepare initial conditions for photochemistry
-call krome_load_photoBin_file("Xelamp_400_Patrick.txt")
+call krome_load_photoBin_file("Xelamp.txt")
 Tflux(:,1) = krome_get_photoBinJ() 
  
 open(71,file="Initial-fluxesPa.txt",status='old',action='write',form='formatted',position="append")
